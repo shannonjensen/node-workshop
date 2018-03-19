@@ -70,7 +70,7 @@ Try running the server again and reloading the page.
 
 ## Fixing your broken paths
 
-You webpage is now very broken. There's a reason for that!
+Your webpage is now very broken. There's a reason for that!
 
 When the router function was in `server.js`, the paths to our assets (html, css etc) that were assigned to the `pathToFile` and `pathToIndex` variables, were correct. Now the router function has moved inside the `src` folder, we need to update the paths to our assets to make sure they point to the right location.
 
