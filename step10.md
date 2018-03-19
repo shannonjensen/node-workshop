@@ -72,14 +72,6 @@ fs.writeFile('path/to/file', yourData, (error) {
 
 If all the steps have gone well, you should have a fully functional CMS!
 
-Lastly, you can commit your final changes and push to github:
-```bash
-git add .
-git commit -m 'enter relevant message'
-git push origin master
-```
-
-
 🎉CONGRATULATIONS!!🎉
 ===
 
