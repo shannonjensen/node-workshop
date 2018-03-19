@@ -2,6 +2,8 @@
 
 For the rest of the workshop your job is to build the proper CMS. We have done the front-end code for you - you only need to worry about the server side of the application.
 
+Delete everything from your router function except the handlers for the home route "/" and the generic assets.
+
 We need to change the `index.html` file. Replace the current content with:
 
 ```html
@@ -36,7 +38,6 @@ We need to change the `index.html` file. Replace the current content with:
 
             <div class="post-container"></div>
         </main>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </body>
 </html>
 ```

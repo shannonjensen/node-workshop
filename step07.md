@@ -42,6 +42,12 @@ we do this:
 var myModule = require('path/to/my/file');
 ```
 
+**About Paths**
+
+We can use **relative paths**. `..` means "go up one level to the folder above".  `.` means "look inside the current folder". For example: '../myComputer/home.txt' means "go up one folder, then go to the 'myComputer' folder, then go to the 'home.txt' file". Another example: './home.txt' means "look inside the current folder for the 'home.txt' file"
+
+Remember that `__dirname` gives us the current directory. We can combine `__dirname`, the dots, and any folder names to point to the correct location.
+
 **Require your router.js file into your server.js file**
 
 If you run your server, you should get an error:
@@ -64,15 +70,20 @@ Try running the server again and reloading the page.
 
 ## Fixing your broken paths
 
-You should see a very broken webpage now. There's a reason for that!
+Your webpage is now very broken. There's a reason for that!
 
 When the router function was in `server.js`, the paths to our assets (html, css etc) that were assigned to the `pathToFile` and `pathToIndex` variables, were correct. Now the router function has moved inside the `src` folder, we need to update the paths to our assets to make sure they point to the right location.
 
-We can use **relative paths**. `..` means "go up one level to the folder above".  `.` means "look inside the current folder". For example: '../myComputer/home.txt' means "go up one folder, then go to the 'myComputer' folder, then go to the 'home.txt' file". Another example: './home.txt' means "look inside the current folder for the 'home.txt' file"
+Refer to the About Paths section above for guidance and don't be afraid to ask questions.
 
-Remember that `__dirname` gives us the current directory. We can combine `__dirname`, the dots, and any folder names to point to the correct location.
-
-See if you can do this by yourself. Work with your team if you're struggling.
+Hint that it should look like:
+```js
+__dirname + '/../public/index.html'
+```
+or
+```js
+path.join(__dirname, '..', 'public', 'index.html')
+```
 
 
 ## More modularisation!!!

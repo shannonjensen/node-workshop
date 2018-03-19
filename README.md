@@ -18,7 +18,7 @@ We believe in learning by doing!
 
 ### Structure of the workshop
 
-You will be working on this project in pairs.  Your mentors will be available to help you out and answer any questions. Remember the 20/20/20 rule if you get stuck!
+You will be working on this project in pairs.  Your mentors will be available to help you out and answer any questions. Remember the 20/20/20 rule if you get stuck.
 
 **First, clone this repository onto your own machine**
 

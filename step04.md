@@ -57,12 +57,14 @@ Let's try it.
 
 **Require `fs` module at the top of your file**
 
+Edit your code to include the following route:
+
 ```js
 var http = require('http');
 var fs = require('fs');
 
 function router (request, response) {
-
+  //...
   if (endpoint === "/") {
     response.writeHead(200, {"Content-Type": "text/html"});
 
@@ -75,6 +77,7 @@ function router (request, response) {
       response.end(file);
     });
   }
+  //...
 }
 ```
 
